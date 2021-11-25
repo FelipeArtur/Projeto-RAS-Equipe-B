@@ -4,7 +4,7 @@
 #define echoPin2 8
 #define trigPin2 9
 #define echoPin3 6
-#define trigPin3 5
+#define trigPin3 7
 
 //Variables declaration
 int motor = 12;
