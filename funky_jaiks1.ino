@@ -1,14 +1,14 @@
 //Sensor setup
-#define echoPin1 9
-#define trigPin1 10
-#define echoPin2 7
-#define trigPin2 8
-#define echoPin3 5
-#define trigPin3 6
+#define echoPin1 10
+#define trigPin1 11
+#define echoPin2 8
+#define trigPin2 9
+#define echoPin3 6
+#define trigPin3 5
 
 //Variables declaration
 int motor = 12;
-int pieso = 13;
+int piezo = 13;
 int greenled = 4;
 int yellowled = 3;
 int redled = 2;
@@ -19,7 +19,7 @@ int left_distance = 0;
 
 void setup() // Startup configs for Arduino
 {
-  pinMode(pieso, OUTPUT);
+  pinMode(piezo, OUTPUT);
   pinMode(motor, OUTPUT);
   pinMode(greenled, OUTPUT);
   pinMode(yellowled, OUTPUT);
