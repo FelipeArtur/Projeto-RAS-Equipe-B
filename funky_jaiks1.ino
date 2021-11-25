@@ -6,22 +6,18 @@
 #define echoPin3 5
 #define trigPin3 6
 
-//Distancia de que?
-unsigned int distancia1 = 0;
-unsigned int duracao1 = 0;
-unsigned int distancia2 = 0;
-unsigned int duracao2 = 0;
-unsigned int distancia3 = 0;
-unsigned int duracao3 = 0;
-
-//Declaracao de variaveis
+//Variables declaration
 int motor = 12;
 int pieso = 13;
 int greenled = 4;
 int yellowled = 3;
 int redled = 2;
+int duration = 0;
+int back_distance = 0;
+int right_distance = 0;
+int left_distance = 0;
 
-void setup() // Starting configs for Arduino
+void setup() // Startup configs for Arduino
 {
   pinMode(pieso, OUTPUT);
   pinMode(motor, OUTPUT);
@@ -29,7 +25,7 @@ void setup() // Starting configs for Arduino
   pinMode(yellowled, OUTPUT);
   pinMode(redled, OUTPUT);
 
-  //Mais leds, pq ?
+  //More leds
   pinMode(A0, OUTPUT);
   pinMode(A1, OUTPUT);
   pinMode(A2, OUTPUT);
@@ -37,31 +33,57 @@ void setup() // Starting configs for Arduino
   pinMode(A4, OUTPUT);
   pinMode(A5, OUTPUT);
 
+  //Back sensor
   pinMode(echoPin1, INPUT);
   pinMode(trigPin1, OUTPUT);
-
+  //Right sensor
   pinMode(echoPin2, INPUT);
   pinMode(trigPin2, OUTPUT);
-
+  //Left sensor
   pinMode(echoPin3, INPUT);
   pinMode(trigPin3, OUTPUT);
-  Serial.begin(9600); //?
+
+  Serial.begin(9600);
 }
 
-void distance_check()
+void distance_check_back()
 {
   digitalWrite(trigPin1, HIGH);
   delayMicroseconds(10);
   digitalWrite(trigPin1, LOW);
-  duracao1 = pulseIn(echoPin1, HIGH);
-  distancia1 = duracao1 * 0.017;
-  Serial.print(distancia1);
-  Serial.print("cm ");
+  duration = pulseIn(echoPin1, HIGH);
+  back_distance = duration * 0.017;
+  duration = 0;
+  return back_distance;
+}
+
+void distance_check_right()
+{
+  digitalWrite(trigPin2, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin2, LOW);
+  duration = pulseIn(echoPin2, HIGH);
+  right_distance = duration * 0.017;
+  duration = 0;
+  return right_distance;
+}
+
+void distance_check_left()
+{
+  digitalWrite(trigPin3, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin3, LOW);
+  duration = pulseIn(echoPin3, HIGH);
+  left_distance = duration * 0.017;
+  duration = 0;
+  return left_distance;
 }
 
 void loop() // Main code
 {
-  distance_check();
+  void distance_check_back();
+  void distance_check_right();
+  void distance_check_left();
 
   // Controle de movimento
   if (distancia1 > 5)
@@ -104,105 +126,4 @@ void loop() // Main code
     digitalWrite(4, LOW);
   }
   delay(100);
-
-  /*Code 02
-  digitalWrite(trigPin2, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trigPin2, LOW);
-  duracao2 = pulseIn(echoPin2, HIGH);
-  distancia2 = duracao2 * 0.017;
-  Serial.print(distancia2);
-  Serial.print("cm ");
-
-  if (distancia2 > 5)
-  {
-    digitalWrite(motor, HIGH);
-  }
-  else if (distancia2 < 5)
-  {
-    digitalWrite(motor, LOW);
-  }
-
-  if (distancia2 < 50)
-  {
-    digitalWrite(A2, HIGH);
-    tone(13, 1000, 50);
-    delay(400);
-    digitalWrite(A2, LOW);
-  }
-  else
-  {
-    digitalWrite(A2, LOW);
-    digitalWrite(13, LOW);
-  }
-  if (distancia2 >= 50 and distancia2 < 200)
-  {
-    digitalWrite(A1, HIGH);
-    delay(500);
-    digitalWrite(A1, LOW);
-  }
-  else
-  {
-    digitalWrite(A1, LOW);
-  }
-  if (distancia2 >= 200 and distancia2 < 330)
-  {
-    digitalWrite(A0, HIGH);
-  }
-  else
-  {
-    digitalWrite(A0, LOW);
-  }
-  delay(100);
-
-  //Code 03
-  digitalWrite(trigPin3, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trigPin3, LOW);
-  duracao3 = pulseIn(echoPin3, HIGH);
-  distancia3 = duracao3 * 0.017;
-  Serial.print(distancia3);
-  Serial.print("cm ");
-
-  if (distancia3 > 5)
-  {
-    digitalWrite(motor, HIGH);
-  }
-  else if (distancia1 < 5)
-  {
-    digitalWrite(motor, LOW);
-  }
-
-  if (distancia3 < 50)
-  {
-    digitalWrite(A5, HIGH);
-    tone(13, 1000, 50);
-    delay(400);
-    digitalWrite(A5, LOW);
-  }
-  else
-  {
-    digitalWrite(A5, LOW);
-    digitalWrite(13, LOW);
-  }
-  if (distancia3 >= 50 and distancia3 < 200)
-  {
-    digitalWrite(A4, HIGH);
-    delay(500);
-    digitalWrite(A4, LOW);
-  }
-  else
-  {
-    digitalWrite(A4, LOW);
-  }
-  if (distancia3 >= 200 and distancia3 < 330)
-  {
-    digitalWrite(A3, HIGH);
-  }
-  else
-  {
-    digitalWrite(A3, LOW);
-  }
-  delay(100);
-  */
 }
