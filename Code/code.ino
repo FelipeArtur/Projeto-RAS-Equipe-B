@@ -17,7 +17,8 @@ int back_distance = 0;
 int right_distance = 0;
 int left_distance = 0;
 
-void setup() // Startup configs for Arduino
+// Startup configs for Arduino
+void setup()
 {
   pinMode(piezo, OUTPUT);
   pinMode(motor, OUTPUT);
@@ -25,13 +26,13 @@ void setup() // Startup configs for Arduino
   pinMode(yellowled_back , OUTPUT);
   pinMode(redled_back, OUTPUT);
 
-  //More leds
-  pinMode(A0, OUTPUT); //VERDE
-  pinMode(A1, OUTPUT); //AMARELA
-  pinMode(A2, OUTPUT); //VERMELHO
-  pinMode(A3, OUTPUT); //VERDE
-  pinMode(A4, OUTPUT); //AMARELA
-  pinMode(A5, OUTPUT); //VERMELHO
+  //Leds for left and right sensors
+  pinMode(A0, OUTPUT); //greenled_left
+  pinMode(A1, OUTPUT); //yellowled_left
+  pinMode(A2, OUTPUT); //redled_left
+  pinMode(A3, OUTPUT); //greenled_right
+  pinMode(A4, OUTPUT); //yellowled_right
+  pinMode(A5, OUTPUT); //redled_right
 
   //Back sensor
   pinMode(echoPin1, INPUT);
@@ -46,6 +47,7 @@ void setup() // Startup configs for Arduino
   Serial.begin(9600);
 }
 
+// Functions to check distance from sensor
 int distance_check_back()
 {
   digitalWrite(trigPin1, HIGH);
@@ -82,6 +84,7 @@ int distance_check_left()
   Serial.print("cm ");
 }
 
+//Control the three possible cases (OK - GREEN, CAUTION - YELLOW and DANGER - RED)
 void green_case(int green){
   digitalWrite(motor, HIGH);
   digitalWrite(green, HIGH);
@@ -103,7 +106,7 @@ void red_case(int red){
   digitalWrite(red, LOW);
 }
 
-// Controle de movimento
+// Functions to control movement possibilities
 void movement_control_back(){
  if (back_distance > 50){
    green_case(greenled_back);
@@ -140,17 +143,18 @@ void movement_control_left(){
   }
 }
 
-void loop() // Main code
+// Main function 
+void loop()
 {
   distance_check_back();
   movement_control_back();
-  delay(100);
+  delay(120);
   
   distance_check_right();
   movement_control_right();
-  delay(100);
+  delay(120);
 
   distance_check_left();
   movement_control_left();
-  delay(100);
+  delay(120);
 }
