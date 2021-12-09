@@ -76,7 +76,7 @@ O sistema alerta o motorista com diferentes tipos de sinais a distancia que o se
 - GitHub: https://github.com/ValenteSF
 - LinkedIn: https://www.linkedin.com/in/felipefiscina/
 
-### **Nicolas**
+### **Nicolas Christian de Souza Dunham**
 - E-mail: nicolas.dunham@aln.senaicimatec.edu.br 
 - GitHub: https://github.com/braviun
 - LinkedIn: https://www.linkedin.com/in/nicolas-christian-de-souza-dunham-922bb5222/
