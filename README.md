@@ -71,7 +71,7 @@ O sistema alerta o motorista com diferentes tipos de sinais a distancia que o se
 - GitHub: https://github.com/FelipeArtur
 - LinkedIn: https://www.linkedin.com/in/felipeartur/
 
-### **Felipe Valente**
+### **Felipe Valente Santos Fiscina**
 - E-mail: felipe.fiscina@aln.senaicimatec.edu.br
 - GitHub: https://github.com/ValenteSF
 - LinkedIn: https://www.linkedin.com/in/felipefiscina/
