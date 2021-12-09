@@ -56,7 +56,7 @@ O sistema alerta o motorista com diferentes tipos de sinais a distancia que o se
   - Há a emissão de uma luz amarela pulsante;
 
 ### Led Vermelha: PERIGO
-  - Caso a distáncia entre o sensor e o obstaculo seja menor que 20cn este caso está ativo;
+  - Caso a distáncia entre o sensor e o obstaculo seja menor que 20cm este caso está ativo;
   - Há emissão de sinal sonoro estridente e curto em sintonia com o sinal visual;
   - Há a emissão de uma luz vermelha pulsante;
 
