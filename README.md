@@ -33,6 +33,13 @@ $ git clone https://github.com/FelipeArtur/Projeto-RAS-Equipe-B
 - Caso prefira, é possível acessar o compilador online https://create.arduino.cc/editor
 
 ## Desenvolvimento
+### Hardware
+O circuito do projeto pode ser visto na imagem a seguir: 
+
+![banner](https://github.com/FelipeArtur/Projeto-RAS-Equipe-B/blob/main/Circuit/TrainIEEE%20RAS%20v.2.png?raw=true)
+
+### Software
+***EXPLICAR O FUNCIONAMENTO DO CÓDIGO***
 
 ## Informações para contato
 
