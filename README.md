@@ -54,6 +54,6 @@ O circuito do projeto pode ser visto na imagem a seguir:
 - LinkedIn: https://www.linkedin.com/in/felipefiscina/
 
 ### **Nicolas**
-- E-mail: 
-- GitHub:
-- LinkedIn:
+- E-mail: nicolas.dunham@aln.senaicimatec.edu.br 
+- GitHub: https://github.com/braviun
+- LinkedIn: https://www.linkedin.com/in/nicolas-christian-de-souza-dunham-922bb5222/
