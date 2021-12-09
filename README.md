@@ -15,34 +15,38 @@ O desafio consistia na criação de um Sistema de assistente de estacionamento b
 
 ## Organização
 A seguinte organização das pastas foi seguida: 
-- Code: Contêm o código com extensão .ino;
-- Circuit: Contêm o versionamento dos circuitos;
+- `Code`: Contêm o código com extensão .ino;
+- `Circuit`: Contêm o versionamento dos circuitos;
 
 ## Instalação
 ### Repositório GitHub
-Para fazer o download deste repositório basta clonar numa pasta de sua preferência.
+Para fazer o download deste repositório basta clonar numa pasta de sua `preferência`.
+
+```
 
 $ git clone https://github.com/FelipeArtur/Projeto-RAS-Equipe-B
 
+```
+
 ### Arduino
-Para instalação da IDE Arduino acesse https://www.arduino.cc/en/software e escolha a opção referente ao seu sistema operacional.
-Caso prefira, é possível acessar o compilador online https://create.arduino.cc/editor
+- Para instalação da IDE Arduino acesse https://www.arduino.cc/en/software e escolha a opção referente ao seu sistema operacional.
+- Caso prefira, é possível acessar o compilador online https://create.arduino.cc/editor
 
 ## Desenvolvimento
 
 ## Informações para contato
 
-### Felipe Artur Macedo Lima
+### **Felipe Artur Macedo Lima**
 - E-mail: felipe.lima@aln.senaicimatec.edu.br
 - GitHub: https://github.com/FelipeArtur
 - LinkedIn: https://www.linkedin.com/in/felipeartur/
 
-### Felipe Valente
+### **Felipe Valente**
 - E-mail:
 - GitHub:
 - LinkedIn:
 
-### Nicolas
+### **Nicolas**
 - E-mail: 
 - GitHub:
 - LinkedIn:
