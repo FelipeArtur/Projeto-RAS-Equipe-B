@@ -45,21 +45,24 @@ Abra o arquivo code.ino localizado na pasta Projeto-RAS-Equipe-B/Code e carregue
 ## Simulação
 O sistema alerta o motorista com diferentes tipos de sinais a distancia que o sensor se encontrar do obstáculo: 
 
-1. Led Verde: 
-  - X
-  - Y
-  - Z
+### Led Verde: OK
+  - Caso a distáncia entre o sensor e o obstaculo seja maior que 50cm este caso está ativo;
+  - Não há emissão de sinal sonoro;
+  - Há a emissão de uma luz verde pulsante;
 
-2. Led Amarela:
-  - X
-  - Y
-  - Z
+### Led Amarela: ATENÇÃO 
+  - Caso a distáncia entre o sensor e o obstaculo seja maior que 20cm e menor ou igual a 50cm este caso está ativo;
+  - Não há emissão de sinal sonoro;
+  - Há a emissão de uma luz amarela pulsante;
 
-3. Led Vermelha:
-  - X
-  - Y
-  - Z
-  - A
+### Led Vermelha: PERIGO
+  - Caso a distáncia entre o sensor e o obstaculo seja menor que 20cn este caso está ativo;
+  - Há emissão de sinal sonoro estridente e curto em sintonia com o sinal visual;
+  - Há a emissão de uma luz vermelha pulsante;
+
+### Observações: 
+  - Cada sensor tem um conjunto de três led's para o pleno funcionamento do sistema.
+  - Há apenas um piezo responsável pela emissão do sinal sonoro, desta forma, o som é repetido de forma cíclica começando pelo sensor trazeiro, seguindo para o dá direita e finalizando com o da esquerda. 
 
 ## Informações para contato
 
