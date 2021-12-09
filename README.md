@@ -1,7 +1,7 @@
 # Projeto RAS Equipe B
 ## Introdução
 
-Este repositório foi criado para o desenvolvimento do Desafio TrainIEEE referante ao processo seletivo realizado em 2021.2.
+Este repositório foi criado para o desenvolvimento do Desafio TrainIEEE referente ao processo seletivo realizado em 2021.2.
 
 O desafio consistia na criação de um Sistema de assistente de estacionamento baseado em sensores ultrassônicos, os materiais necessários para o desenvolvimento do projeto foram: 
 - 01 - Arduino UNO;
@@ -49,9 +49,9 @@ O circuito do projeto pode ser visto na imagem a seguir:
 - LinkedIn: https://www.linkedin.com/in/felipeartur/
 
 ### **Felipe Valente**
-- E-mail:
-- GitHub:
-- LinkedIn:
+- E-mail: felipe.fiscina@aln.senaicimatec.edu.br
+- GitHub: https://github.com/ValenteSF
+- LinkedIn: https://www.linkedin.com/in/felipefiscina/
 
 ### **Nicolas**
 - E-mail: 
