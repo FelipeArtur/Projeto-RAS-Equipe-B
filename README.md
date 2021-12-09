@@ -43,20 +43,20 @@ O circuito do projeto pode ser visto na imagem a seguir:
 Abra o arquivo code.ino localizado na pasta Projeto-RAS-Equipe-B/Code e carregue-o no seu Arduino
 
 ## Simulação
-O sistema alerta o motorista com diferentes tipos de sinais a distancia que o sensor se encontrar do obstáculo: 
+O sistema alerta o motorista com diferentes tipos de sinais a distância que o sensor se encontrar do obstáculo: 
 
 ### Led Verde: OK
-  - Caso a distáncia entre o sensor e o obstaculo seja maior que 50cm este caso está ativo;
+  - Caso a distância entre o sensor e o obstáculo seja maior que 50cm este caso está ativo;
   - Não há emissão de sinal sonoro;
   - Há a emissão de uma luz verde pulsante;
 
 ### Led Amarela: ATENÇÃO 
-  - Caso a distáncia entre o sensor e o obstaculo seja maior que 20cm e menor ou igual a 50cm este caso está ativo;
+  - Caso a distância entre o sensor e o obstáculo seja maior que 20cm e menor ou igual a 50cm este caso está ativo;
   - Não há emissão de sinal sonoro;
   - Há a emissão de uma luz amarela pulsante;
 
 ### Led Vermelha: PERIGO
-  - Caso a distáncia entre o sensor e o obstaculo seja menor que 20cm este caso está ativo;
+  - Caso a distância entre o sensor e o obstáculo seja menor que 20cm este caso está ativo;
   - Há emissão de sinal sonoro estridente e curto em sintonia com o sinal visual;
   - Há a emissão de uma luz vermelha pulsante;
 
