@@ -17,6 +17,7 @@ O desafio consistia na criação de um Sistema de assistente de estacionamento b
 A seguinte organização das pastas foi seguida: 
 - `Code`: Contêm o código com extensão .ino;
 - `Circuit`: Contêm o versionamento dos circuitos;
+- `Resources`: Pasta de apoio para conteúdos do README.md
 
 ## Instalação
 ### Repositório GitHub
@@ -39,7 +40,26 @@ O circuito do projeto pode ser visto na imagem a seguir:
 ![banner](https://github.com/FelipeArtur/Projeto-RAS-Equipe-B/blob/main/Circuit/TrainIEEE%20RAS%20v.2.png?raw=true)
 
 ### Software
-***EXPLICAR O FUNCIONAMENTO DO CÓDIGO***
+Abra o arquivo code.ino localizado na pasta Projeto-RAS-Equipe-B/Code e carregue-o no seu Arduino
+
+## Simulação
+O sistema alerta o motorista com diferentes tipos de sinais a distancia que o sensor se encontrar do obstáculo: 
+
+1. Led Verde: 
+  - X
+  - Y
+  - Z
+
+2. Led Amarela:
+  - X
+  - Y
+  - Z
+
+3. Led Vermelha:
+  - X
+  - Y
+  - Z
+  - A
 
 ## Informações para contato
 
