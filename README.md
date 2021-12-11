@@ -6,12 +6,10 @@ Este repositório foi criado para o desenvolvimento do Desafio TrainIEEE referen
 O desafio consistia na criação de um Sistema de assistente de estacionamento baseado em sensores ultrassônicos, os materiais necessários para o desenvolvimento do projeto foram: 
 - 01 - Arduino UNO;
 - 03 - Sensores Ultrassônicos (HC-SR04);
-- 03 - Vermelho LED;
-- 03 - Amarelo LED;
-- 03 - Verde LED;
+- 01 - LED RGB;
 - 01 - Piezo; 
 - 01 - Motor CC;
-- 09 - Resistor 200Ω;
+- 01 - Resistor 160Ω;
 
 ## Organização
 A seguinte organização das pastas foi seguida: 
@@ -45,23 +43,23 @@ Abra o arquivo code.ino localizado na pasta Projeto-RAS-Equipe-B/Code e carregue
 ## Simulação
 O sistema alerta o motorista com diferentes tipos de sinais a distância que o sensor se encontrar do obstáculo: 
 
-### Led Verde: OK
-  - Caso a distância entre o sensor e o obstáculo seja maior que 50cm este caso está ativo;
+### Luz Verde: OK
+  - Caso a distância entre o sensor e o obstáculo seja maior que 60cm este caso está ativo;
   - Não há emissão de sinal sonoro;
   - Há a emissão de uma luz verde pulsante;
 
-### Led Amarela: ATENÇÃO 
-  - Caso a distância entre o sensor e o obstáculo seja maior que 20cm e menor ou igual a 50cm este caso está ativo;
+### Luz Amarela: ATENÇÃO 
+  - Caso a distância entre o sensor e o obstáculo seja maior que 40cm e menor ou igual a 60cm este caso está ativo;
   - Não há emissão de sinal sonoro;
   - Há a emissão de uma luz amarela pulsante;
 
-### Led Vermelha: PERIGO
-  - Caso a distância entre o sensor e o obstáculo seja menor que 20cm este caso está ativo;
+### Luz Vermelha: PERIGO
+  - Caso a distância entre o sensor e o obstáculo seja menor que 40cm este caso está ativo;
   - Há emissão de sinal sonoro estridente e curto em sintonia com o sinal visual;
   - Há a emissão de uma luz vermelha pulsante;
 
 ### Observações: 
-  - Cada sensor tem um conjunto de três led's para o pleno funcionamento do sistema.
+  - Cada sensor está conectado ao LED RGB para o pleno funcionamento do sistema.
   - Há apenas um piezo responsável pela emissão do sinal sonoro, desta forma, o som é repetido de forma cíclica começando pelo sensor trazeiro, seguindo para o dá direita e finalizando com o da esquerda. 
 
 ## Informações para contato
