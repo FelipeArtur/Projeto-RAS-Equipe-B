@@ -8,14 +8,13 @@ O desafio consistia na criação de um Sistema de assistente de estacionamento b
 - 03 - Sensores Ultrassônicos (HC-SR04);
 - 01 - LED RGB;
 - 01 - Piezo; 
-- 01 - Motor CC;
 - 01 - Resistor 160Ω;
 
 ## Organização
 A seguinte organização das pastas foi seguida: 
 - `Code`: Contêm o código com extensão .ino;
 - `Circuit`: Contêm o versionamento dos circuitos;
-- `Resources`: Pasta de apoio para conteúdos do README.md
+- `Resources`: Pasta de apoio para conteúdos do projeto;
 
 ## Instalação
 ### Repositório GitHub
