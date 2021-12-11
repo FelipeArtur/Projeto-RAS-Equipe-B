@@ -35,7 +35,7 @@ $ git clone https://github.com/FelipeArtur/Projeto-RAS-Equipe-B
 ### Hardware
 O circuito do projeto pode ser visto na imagem a seguir: 
 
-![banner]https://github.com/FelipeArtur/Projeto-RAS-Equipe-B/blob/main/Circuit/TrainIEEE%20RAS%20v.3.png?raw=true)
+![banner](https://github.com/FelipeArtur/Projeto-RAS-Equipe-B/blob/main/Circuit/TrainIEEE%20RAS%20v.3.png?raw=true)
 
 ### Software
 Abra o arquivo code.ino localizado na pasta Projeto-RAS-Equipe-B/Code e carregue-o no seu Arduino
