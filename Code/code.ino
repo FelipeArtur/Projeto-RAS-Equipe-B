@@ -1,4 +1,4 @@
-//Sensor setup
+//Sensorsetup
 #define echoPin1 10 //Back
 #define trigPin1 11 //Back
 #define echoPin2 8 //Right
@@ -7,34 +7,32 @@
 #define trigPin3 7 //Left
 
 //Variables declaration
-int motor = 12;
-int piezo = 13;
+int piezo = 13; //Piezo controller 
 int duration = 0;
-int back_distance = 0;
-int right_distance = 0;
-int left_distance = 0;
-int RGB1 = 2;
-int RGB2 = 3;
-int RGB3 = 4;
+int back_distance = 0; //Back distance chack 
+int right_distance = 0; //Right distance chack
+int left_distance = 0; //Left distance chack
+int RGB1 = 2; //Red color controller
+int RGB2 = 3; //Blue color controller
+int RGB3 = 4; //Green color controller
 
 // Startup configs for Arduino
 void setup()
 {
   pinMode(piezo, OUTPUT);
-  pinMode(motor, OUTPUT);
   pinMode (RGB1, OUTPUT);
   pinMode (RGB2, OUTPUT);
   pinMode (RGB3, OUTPUT);
 
-  //Back sensor
+  //Settings for the back sensor
   pinMode(echoPin1, INPUT);
   pinMode(trigPin1, OUTPUT);
 
-  //Right sensor
+  //Settings for the right sensor
   pinMode(echoPin2, INPUT);
   pinMode(trigPin2, OUTPUT);
 
-  //Left sensor
+  //Settings for the left sensor
   pinMode(echoPin3, INPUT);
   pinMode(trigPin3, OUTPUT);
 
@@ -42,7 +40,7 @@ void setup()
 }
 
 // Functions to check distance from sensor
-int distance_check_back()
+void distance_check_back()
 {
   digitalWrite(trigPin1, HIGH);
   delayMicroseconds(10);
